@@ -18085,12 +18085,16 @@ class ListItem extends React.Component {
 
   render() {
     return React.createElement(
-      'li',
+      "li",
       null,
       React.createElement(
-        'h4',
-        null,
-        this.props.ingredient
+        "a",
+        { href: "#" },
+        React.createElement(
+          "h4",
+          null,
+          this.props.ingredient
+        )
       )
     );
   }
